@@ -23,14 +23,14 @@ body{
 }
 nav
 {
-  padding:3% 1% 0px 1%;
+  padding:3% 1% 0% 1%;
   flex:var(--sidebar-flex);
   background: rgb(34, 115, 159);
   background: linear-gradient(180deg, rgb(38, 37, 37) 20%, rgb(59, 61, 62) 60%, rgb(97, 97, 97) 95%);
 }
 .condiv
 {
-  padding: 100px ;
+  padding: 4% ;
   background-color: #f4f5f9;
   flex:var(--condiv-flex);
 }
