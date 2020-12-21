@@ -108,14 +108,14 @@ h1,h2,h3,h4,p{
 {
   position: relative;
   display: flex;
-  bottom: -45%;
-  left: 11%;
+  bottom: -47%;
+  left: 16%;
 }
 
 .social i
 {
   padding-right: 50px;
-  font-size: 350%;
+  font-size: 270%;
   color: #9a9b9c;
 }
 
