@@ -23,7 +23,7 @@ body{
 }
 nav
 {
-  padding:3% 1% 0% 1%;
+  padding:2% 1% 0% 1%;
   flex:var(--sidebar-flex);
   background: rgb(34, 115, 159);
   background: linear-gradient(180deg, rgb(38, 37, 37) 20%, rgb(59, 61, 62) 60%, rgb(97, 97, 97) 95%);
@@ -106,10 +106,10 @@ h1,h2,h3,h4,p{
 
 .social
 {
-  position: relative;
+  position: absolute;
   display: flex;
-  bottom: -47%;
-  left: 16%;
+  bottom: 4%;
+  left: 4%;
 }
 
 .social i
