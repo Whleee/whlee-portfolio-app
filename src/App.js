@@ -1,39 +1,26 @@
 import React from 'react';
-import './App.css';
-import {
-BrowserRouter as Router,
-Route,
-} from "react-router-dom";
-
 import Navbar from './components/Navbar';
-import Home from './contents/Home';
-import About from './contents/About';
-import Education from './contents/Education';
-import Skills from './contents/Skills';
-import Contact from './contents/Contact';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './App.css';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import SignUp from './components/pages/Contact';
+import Education from './components/pages/Education';
 
 function App() {
   return (
-    <Router>
-    <div className="App">
-    <Navbar />
-    <Route exact path="/">
-    <Home />
-    </Route>
-    <Route path="/about">
-    <About />
-    </Route>
-    <Route path="/education">
-    <Education />
-    </Route>
-    <Route path="/skills">
-    <Skills />
-    </Route>
-    <Route path="/contact">
-    <Contact />
-    </Route>
-    </div>
-    </Router>
-  )
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component = {Home} />
+          <Route path='/about' exact component= {About} />
+          <Route path='/education' exact component= {Education} />
+          <Route path='/sign-up' exact component= {SignUp} />
+        </Switch>
+      </Router>
+    </>
+  );
 }
+
 export default App;

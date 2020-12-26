@@ -1,39 +1,66 @@
-import React, { Component } from 'react';
-import Navitem from './Navitem';
-import Social from './Social';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from './Button';
+import './Navbar.css';
 
-class Navbar extends Component {
-    constructor(props)
-    {
-        super(props);
-        this.state={
-            'NavItemActive':''
-        }
+function Navbar() {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if(window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
     }
-    activeitem=(x)=>
-    {
-        if(this.state.NavItemActive.length>0){
-            document.getElementById(this.state.NavItemActive).classList.remove('active');
-        }
-        this.setState({'NavItemActive':x},()=>{
-            document.getElementById(this.state.NavItemActive).classList.add('active');
-        });
-    };
-    render() {
-        return (
-            <nav>
-            <ul>
-            <Navitem item="Home" tolink="/"  activec={this.activeitem}></Navitem>
-            <Navitem item="About" tolink="/about"  activec={this.activeitem}></Navitem>
-            <Navitem item="Education" tolink="/education"  activec={this.activeitem}></Navitem>
-            <Navitem item="Skills" tolink="/skills"  activec={this.activeitem}></Navitem>
-            <Navitem item="Contact" tolink="/contact"  activec={this.activeitem}></Navitem>
-            </ul>
-            <Social />
-            </nav>
-            )
-        }
-    }
-    
-    export default Navbar
-    
+  };
+
+  useEffect(() => {
+    showButton();
+  }, [])
+
+  window.addEventListener('resize', showButton);
+
+  return (
+    <>
+      <nav className='navbar'>
+        <div className='navbar-container'>
+          <Link to="/" className='navbar-logo' onClick={closeMobileMenu}>
+            Whleee <i className='fab fa-typo3' />
+          </Link>
+          <div className='menu-icon' onClick={handleClick}>
+            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          </div>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <li className='nav-item'>
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                Home
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+                About
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/education' className='nav-links' onClick={closeMobileMenu}>
+                Education
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/contact' className='nav-links-mobile' onClick={closeMobileMenu}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+          {button && <Button buttonStyle='btn--outline'>Contact</Button>}
+        </div>
+      </nav>
+    </>
+  );
+}
+
+export default Navbar;
