@@ -26,7 +26,7 @@ function CardsContact() {
               src="images/Gmail.jpg"
               text="Email me at leeweiheng98@gmail.com"
               label='Email'
-              path='/contact'      
+              path='/contact'
             />
           </ul>
         </div>
