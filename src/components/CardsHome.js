@@ -4,6 +4,7 @@ import './Cards.css';
 
 function CardsHome() {
   return (
+    <div className='bg'>
     <div className='cards'>
       <h1>Some links for more information about myself</h1>
       <div className="cards__container">
@@ -24,6 +25,7 @@ function CardsHome() {
           </ul>
         </div>
       </div>
+    </div>
     </div>
   )
 }

@@ -6,6 +6,7 @@ import ReactTypingEffect from 'react-typing-effect';
 
 function HeroSection() {
   return (
+    <>
     <div className='hero-container'>
       <h1>Whleee's website</h1>
       <p>Hey there!</p>
@@ -30,6 +31,7 @@ function HeroSection() {
       </div>
       */}
     </div>
+    </>
   )
 }
 
