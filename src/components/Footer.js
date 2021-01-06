@@ -91,7 +91,6 @@ function Footer() {
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
               Whleee
-              <i class='fab fa-typo3' />
             </Link>
           </div>
           <small class='website-rights'>Done during 2020 Winter Break</small>

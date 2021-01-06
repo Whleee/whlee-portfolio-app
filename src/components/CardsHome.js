@@ -20,7 +20,7 @@ function CardsHome() {
               src="images/resume.jpg"
               text="Click to be redirected to my resume!"
               label='Resume'
-              path='/services'          
+              path='https://drive.google.com/file/d/1Gl6svaxzR8t5mltXIe0gTpd8KMd53vZ9/view?usp=sharing'          
             />
           </ul>
         </div>
