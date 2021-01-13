@@ -13,13 +13,27 @@ function CardsAbout() {
               src="images/CanoECoach.jpg"
               text="NUS CS2103 Team Project CanoECoach"
               label='Software engineering team project'
-              path='/about'        
+              path='https://github.com/AY2021S1-CS2103-F10-1/tp'        
             />
             <CardItem 
               src="images/ChopChop.jpg"
               text="NUS CP2106 Orbital Project ChopChop"
               label='Group Project'
-              path='/about'          
+              path='https://github.com/Whleee/ChopChop'          
+            />
+            <CardItem 
+              src="images/FoodCross.jpg"
+              text="Hack&Roll2021 Project FoodCross"
+              label='Group Project'
+              path='https://github.com/Silvernitro/hacknroll2021'          
+            />
+          </ul>
+          <ul className="cards__items">
+            <CardItem
+              src="images/Duke.jpg"
+              text="NUS CS2103 Individual Project Duke"
+              label='Individual project'
+              path='https://github.com/Whleee/ip'        
             />
           </ul>
         </div>
