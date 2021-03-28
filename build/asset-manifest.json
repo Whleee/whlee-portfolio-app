@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.64b1f747.chunk.css",
+    "main.js": "/static/js/main.8f71aa5d.chunk.js",
+    "main.js.map": "/static/js/main.8f71aa5d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.aff0e732.js",
+    "runtime-main.js.map": "/static/js/runtime-main.aff0e732.js.map",
+    "static/js/2.201296b8.chunk.js": "/static/js/2.201296b8.chunk.js",
+    "static/js/2.201296b8.chunk.js.map": "/static/js/2.201296b8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.64b1f747.chunk.css.map": "/static/css/main.64b1f747.chunk.css.map",
+    "static/js/2.201296b8.chunk.js.LICENSE.txt": "/static/js/2.201296b8.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/education.28d2f13b.jpg",
+    "static/media/HeroSection.css": "/static/media/whlee.642ef8f5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aff0e732.js",
+    "static/js/2.201296b8.chunk.js",
+    "static/css/main.64b1f747.chunk.css",
+    "static/js/main.8f71aa5d.chunk.js"
+  ]
+}
